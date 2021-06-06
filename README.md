@@ -10,19 +10,22 @@ Refactoring is a common process, and here on this project, we attempt the refact
 
 The timer was run on the original VBA code and the following time was given for processing:
 
+
 ![](Resources/2017_Original_VBA.png)
 
 ![](Resources/2018_Original_VBA.png)
 
-It can be seen that in the original VBA coding, it takes 7103.10 seconds and 7071.36 seconds for code processing for years 2017 and 2018, respectively. The VBA codes are written to consider all 12 tickers within the given file. Those tickers are listed as their own array and are individually considered within the code process. This takes time to consider each and every ticker against the array. 
 
-To improve the length of time to process the VBA code so that it will be capable of handling a high number and volume of tickers, instead of processing the code against every ticker, we have refactored the code to loop through rows and process itself against the row above and below it, this way, it efficiently can decipher the different tickers from each row vs being highly dependent on processing each ticker of each row against the array against potentially hundreds, if not thousands, of stock tickers.
+It can be seen that in the original VBA coding, it takes 7103.10 seconds and 7071.36 seconds for code processing for years 2017 and 2018, respectively. 
+
 
 Above, we have already provided the timing results of the original VBA code. The following photos contain the new timing of the refactored VBA code:
+
 
 ![](Resources/2017_Refactored_VBA.png)
 
 ![](Resources/2018_Refactored_VBA.png)
+
 
 It can be seen from these photos that with the refactoring, the timing of code processing has significantly decreased:
   * 2017's VBA code changed from 7103.10 seconds to .1811 seconds
@@ -34,7 +37,7 @@ To conclude this analysis, let's ask and then answer the following questions:
 
   1. What are the advantages or disadvantages of refactoring code?
 
-The advantages of refactoring any code, is that it can allow code to work efficiently/quickly. This is advantageous when there is a lot of data to be processed from excel through the VBA code. It can be the difference between a click of a button and an instant result, or a click of the button and wait time of a few seconds.  Oher advantages include a cleaner code for both the coder and someone else reading the code to understand what the code is doing, as well as being able to test the code as you proceed with the refactoring process, and that there is always room for steady improvement.
+The advantages of refactoring any code, is that it can allow code to work efficiently/quickly. This is advantageous when there is a lot of data to be processed from excel through the VBA code. It can be the difference between a click of a button and an instant result, or a click of the button and wait time of a few seconds.  Oher advantages include a cleaner code for both the coder and someone else reading the code to understand what the code is doing, being able to leave notes within the code to explain the present processes, as well as being able to test the code as you proceed with the refactoring process, and that there is always room for steady improvement.
 
 Some disadvantages to refactoring code is that one can get lost in the refactoring process if not testing as you go, and not maintaining clean/organized code. Another disadvantage is to ensure that you do not include any new code within the refactoring process. Refactoring is for existing purposes only, and not for new coding tasks. 
 
