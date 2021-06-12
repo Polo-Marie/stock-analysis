@@ -31,6 +31,8 @@ It can be seen from these photos that with the refactoring, the timing of code p
   * 2017's VBA code changed from 7103.10 seconds to .1811 seconds
   * 2018's VBA code changed from 7071.36 seconds to .1650 seconds
 
+This was achieved by refactoring the code in a manner of a "2 for 1". Prior to the refactoring, the code was taking a ticker, looping it through an iteration, and then using that iteration to read the array in order to identify the proper ticker. With the refactoring in place, the adjusted code eliminates the nested for loop that is used to loop through the ticker array. Instead, by having a "tickerIndex" in my code, I am able to immediately and directly loop through the ticker array within the formula line that is written. This shaves off a lot of time when the code is ran and we are able to apply it to all of the key variables as well and readily sum up the relative data of the ticker and its matching values.
+
 
 ## Conclusion
 To conclude this analysis, let's ask and then answer the following questions:
