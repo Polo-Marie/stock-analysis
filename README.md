@@ -1,4 +1,4 @@
-# stock-analysis
+# Stock-Analysis
 
 ## Overview of Project:
 The purpose of this analysis was to refactor the VBA code that collects information on stock market data for years 2017 and 2018. Code has already been created, but it is not an efficient process due to the amount of data collected on the stocks, so this challenge is being done to produce a more efficent and quicker process of getting through the data. By refactoring the code, our code can end up taking fewer steps, using less memory, or even lead to improved logic in its processing. It often lead to quicker processing and even cleaner code for reading and following. 
